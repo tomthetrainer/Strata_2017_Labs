@@ -115,6 +115,21 @@
       <version>2.5.4</version>
     </dependency>
 
+<!-- th dependency for spark transform -->
+
+    <dependency>
+      <groupId>org.datavec</groupId>
+      <artifactId>datavec-api</artifactId>
+      <version>${datavec.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.datavec</groupId>
+      <artifactId>datavec-spark_${scala.binary.version}</artifactId>
+      <version>${datavec.spark.version}</version>
+    </dependency>
+
+
     <!-- th
     <dependency>
       <groupId>org.datavec</groupId>
@@ -165,6 +180,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-core_2.11</artifactId>
+      <version>2.1.0</version>
+    </dependency>
+
 
     <!--
     <dependency>
